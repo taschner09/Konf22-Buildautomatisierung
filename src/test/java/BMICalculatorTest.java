@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BMICalculatorTest {
 
     private BMICalculator bmiCalculator;
+    private String result;
 
     // ALT+EINFG -> setup Methode
     // wird ausgeführt, bevor die Tests ausgeführt werden
@@ -27,6 +28,8 @@ class BMICalculatorTest {
 
     @Test
     void result() {
+        String result = bmiCalculator.result();
+        Assertions.assertEquals("obese", result);
 
 
     }
